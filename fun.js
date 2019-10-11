@@ -26,14 +26,13 @@ let temperature = '';
       type: x.type,
       temperature: x.temperature,
     }
-
+    let store = new weatherdata(data);
     document.getElementById("city").innerHTML= store.getCity();
     document.getElementById("state").innerHTML= store.getState();
     document.getElementById("weather").innerHTML = store.getType();
     document.getElementById("temp").innerHTML = store.getTemp();
   
 } 
-key = 5299c506b1cefa6863651e1dff0b3cc8
 
 // // use class daydate show date and time
 class daydate{
